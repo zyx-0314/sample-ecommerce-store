@@ -4,7 +4,6 @@
 
 import { usePathname } from 'next/navigation'
 
-import WarningSign from "@/components/ui/warning-sign";
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Category } from '@/types';
