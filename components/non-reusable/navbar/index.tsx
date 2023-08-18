@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import Container from "@/components/ui/container";
 import WarningSign from "@/components/ui/warning-sign";
-import MainNav from "@/components/non-reusable/nav/main-nav";
+import MainNav from "@/components/non-reusable/navbar/main-nav";
 import getCategories from "@/actions/get-categories";
-import NavbarActions from "@/components/non-reusable/nav/navbar-actions";
+import NavbarActions from "@/components/non-reusable/navbar/navbar-actions";
 
 export const revalidate = 0;
 
