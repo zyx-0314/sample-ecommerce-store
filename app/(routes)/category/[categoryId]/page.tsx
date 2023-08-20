@@ -89,7 +89,6 @@ export default async function CategoryPage ( {
 
         </div>
       </Container>
-      <WarningSign content="This page is not implemented yet." />
     </div>
   )
 }
