@@ -55,7 +55,7 @@ export default async function CategoryPage ( {
   ]
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white dark:bg-transparent">
       <Container>
         <BillboardSection data={ category.billboard } />
         <div className="px-4 sm:px-6 lg:px-8pb-24">
