@@ -29,8 +29,7 @@ const MobileFilters = ( {
   return (
     <>
       <Button
-        // className='w-fit text-left flex gap-2 rounded-full lg:hidden'
-        className='w-fit text-left flex gap-2 rounded-full'
+        className='w-fit text-left flex gap-2 rounded-full lg:hidden'
         variant='default'
         onClick={ toggleOpen }
       >
