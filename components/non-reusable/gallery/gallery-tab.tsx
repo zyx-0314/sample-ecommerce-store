@@ -24,13 +24,13 @@ const GalleryTab: React.FC<GalleryTabProps> = ( {
               fill
               src={ image.url }
               alt=""
-              className="object-cover object-center"
+              className="object-cover object-center rounded-xl border-gray-300"
             />
           </span>
           <span
             className={ cn(
               'absolute inset-0 rounded-md ring-2 ring-offset-2',
-              selected ? 'ring-black' : 'ring-transparent',
+              selected ? 'ring-black' : 'ring-gray-300',
             ) }
           />
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import getBillboard from '@/actions/get-billboards'
 import getProducts from '@/actions/get-products'
-import BillboardSection from '@/components/non-reusable/billboard'
+import BillboardSection from '@/components/ui/billboard'
 import ProductList from '@/components/ui/product-list'
 import Container from '@/components/ui/container'
 
