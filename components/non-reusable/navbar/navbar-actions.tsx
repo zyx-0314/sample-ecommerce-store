@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button";
 import useCart from "@/hooks/use-cart";
 import { useRouter } from "next/navigation";
+import { ModeToggle } from "./theme-toggle";
 
 const NavbarActions = () =>
 {
@@ -19,6 +20,7 @@ const NavbarActions = () =>
 
   return (
     <div className="ml-auto flex items-center gap-x-4">
+      <ModeToggle />
       <Button
         onClick={ () => router.push( '/cart' ) }
         className='rounded-full flex items-center '
@@ -26,7 +28,7 @@ const NavbarActions = () =>
         <ShoppingBag
           className="w-4 h-4"
         />
-        <span className="ml-2 text-sm font-medium text-white">
+        <span className="ml-2 text-sm font-medium text-white dark:text-black">
           { cart?.items.length || 0 }
         </span>
       </Button>

@@ -4,8 +4,9 @@ import { Urbanist } from 'next/font/google'
 
 import { Footer } from '@/components/non-reusable/footer'
 import { Navbar } from '@/components/non-reusable/navbar/'
-import ModalProvider from '@/provider/modal-provider'
-import ToastProvider from '@/provider/toast-provider'
+import ModalProvider from '@/providers/modal-provider'
+import ToastProvider from '@/providers/toast-provider'
+import { ThemeProvider } from '@/providers/theme-provider'
 
 const urbanist = Urbanist( { subsets: [ 'latin' ] } )
 
@@ -23,11 +24,17 @@ export default function RootLayout ( {
   return (
     <html lang="en">
       <body className={ urbanist.className }>
-        <ModalProvider />
-        <ToastProvider />
-        <Navbar />
-        { children }
-        <Footer />
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
+          <main className='flex flex-col justify-between h-[100vh]'>
+            <div>
+              <ModalProvider />
+              <ToastProvider />
+              <Navbar />
+              { children }
+            </div>
+            <Footer />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -42,7 +42,7 @@ const ProductCard = ( { data }: ProductCardProps ) =>
   return (
     <div
       onClick={ handleClick }
-      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
+      className="bg-white dark:bg-gray-200 group cursor-pointer rounded-xl border p-3 space-y-4"
     >
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image
@@ -72,8 +72,7 @@ const ProductCard = ( { data }: ProductCardProps ) =>
       </div>
       <div>
         <div className="flex justify-between">
-
-          <p className="font-semibold text-lg">
+          <p className="font-semibold text-lg dark:text-black">
             { data.name }
           </p>
           <Currency value={ data.price } />
