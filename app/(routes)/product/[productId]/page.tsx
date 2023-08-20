@@ -24,6 +24,8 @@ export default async function ProductPage ( {
     categoryId: product?.category?.id
   } )
 
+  suggestedProducts.splice( suggestedProducts.findIndex( ( p ) => p.id === product.id ), 1 )
+
   return (
     <div>
       <Container>

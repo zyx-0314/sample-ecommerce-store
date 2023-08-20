@@ -35,7 +35,7 @@ const Gallery: React.FC<GalleryProps> = ( {
                 fill
                 src={ image.url }
                 alt="Image"
-                className="object-cover object-center"
+                className="rounded-xl object-cover object-center border border-gray-300 "
               />
             </div>
           </Tab.Panel>
